@@ -17,12 +17,12 @@ const StyledLink = styled(Link)`
     }
 `
 
-interface Props {
-    to?: any,
-    children?: React.ReactNode,
+interface LinkProps {
+    to: any,
+    children: React.ReactNode, 
 }
 
-const MyLink: React.FC<Props> = ({ to, children }) => {
+const MyLink: React.FC<LinkProps> = ({ to, children }) => {
   return (
     <StyledLink to={to}>
       { children }

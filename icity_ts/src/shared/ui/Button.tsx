@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 
 const StyledButton = styled.button`
@@ -17,13 +17,13 @@ const StyledButton = styled.button`
   }
 `
 
-interface Props {
-    children?: React.ReactNode,
-    onClick?: React.MouseEventHandler<HTMLButtonElement>,
-  }
+interface ButtonProps {
+  onClick?: () => void,
+  children: React.ReactNode,
+}
 
 
-const Button: React.FC<Props> = ({ onClick, children }) => {
+const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <StyledButton onClick={onClick}>
       {children}
@@ -31,4 +31,4 @@ const Button: React.FC<Props> = ({ onClick, children }) => {
   )
 }
 
-export default Button
+export default Button;

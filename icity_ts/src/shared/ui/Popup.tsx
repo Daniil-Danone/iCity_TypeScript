@@ -7,15 +7,8 @@ interface PopupProps {
   children: React.ReactNode,
 }
 
-interface item {
 
-}
-
-interface list {
-  list: item[]
-}
-
-const AuthPopup: React.FC<PopupProps> = ({ isActive, setActive, children }) => {
+const AuthPopup: React.FC<PopupProps> = () => {
   return (
     <></>
   )
